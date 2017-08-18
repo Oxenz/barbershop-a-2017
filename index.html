@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8' />
+	<title>Document</title>
+	<!-- <link rel='stylesheet' href='css/style.min.css' /> -->
+	<link rel='stylesheet' href='css/style.css' />
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<meta name='format-detection' content='telephone=yes'>
+
+</head>
+<body>
+	<header class='header-top'>
+		<div class='header-top__wrapper'>
+			<div class='header-top__logo-wrapper'>
+				<img class='header-top__logo' src='img/logotype-mobile.png' alt='logotype' />
+			</div>
+			<input type='checkbox' id='hamburger' />
+			<label for='hamburger' class='hamburger-menu hamburger-menu--close'>Главная</label>
+			<ul class='main-menu'>
+				<li><a class='main-menu__link main-menu__link--active' href='#'>Главная</a></li>
+				<li><a class='main-menu__link ' href='#'>Наши работы</a></li>
+				<li><a class='main-menu__link ' href='#'>Записаться</a></li>
+				<li><a class='main-menu__link ' href='#'>Контакты</a></li>
+				<li><a class='main-menu__link ' href='#'>HTML Academy</a></li>
+				<li><a class='main-menu__link main-menu--logout' href='#'>Выход</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class='statistics'>
+
+		<div class='statistics__wrapper'>
+			<div class='statistics__inner  statistics__inner--bg'>
+				<div class='statistics__section1'>
+					<h2 class='statistics__caption'>Стрижка у нас это выгодно!</h2>
+					<p class='statistics__description'>Мужская стрижка требует точного
+						подхода. Обратимся к статистике:</p>
+						<div class='statistics__footnote  statistics__footnote--desktop'>* — приведённые данные ложь</div>
+					</div>
+				</div>
+
+				<div class='statistics__inner  statistics__inner--color'>
+					<div class='statistics__section2'>
+						<ul class='statistics__lists'>
+							<li class='statistics__list statistics__list--money mobile-center'>
+								<div class='statistics__sum'>1 500</div>
+								<div class='statistics__title'>Рублей вложений</div>
+							</li>
+							<li class='statistics__list statistics__list--time mobile-center'>
+								<div class='statistics__sum'>7 200</div>
+								<div class='statistics__title'>Секунда времени мастера</div>
+							</li>
+							<li class='statistics__list statistics__list--count mobile-center'>
+								<div class='statistics__sum'>90 000</div>
+								<div class='statistics__title'>Постриженных волос</div>
+							</li>
+							<li class='statistics__list statistics__list--likes mobile-center'>
+								<div class='statistics__sum'>500 000</div>
+								<div class='statistics__title'>Лайков и комплиментов</div>
+							</li>
+						</ul>
+						<div class='statistics__footnote statistics__footnote--mobile'>* — приведённые данные ложь</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+	<section class='advantages'>
+
+		<div class='advantages__wrapper'>
+			<input type='radio' id='advantages__fast' name='advantages' checked />
+			<input type='radio' id='advantages__cool' name='advantages' />
+			<input type='radio' id='advantages__expensive' name='advantages' />
+			<div class='advantages__fast'>
+				<h2 class='advantages__caption'>Быстро</h2>
+				<p class='advantages__tittle'>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+			</div>
+			<div class='advantages__cool'>
+				<h2 class='advantages__caption'>Круто</h2>
+				<p class='advantages__tittle'>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+				</p>
+			</div>
+			<div class='advantages__expensive'>
+				<h2 class='advantages__caption'>Дорого</h2>
+				<p class='advantages__tittle'>Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+			</div>
+			<div class='toogle'>
+				<label for='advantages__fast'></label>
+				<label for='advantages__cool'></label>
+				<label for='advantages__expensive'></label>
+			</div>
+		</div>
+
+	</section>
+
+	<section class='news'>
+		<div class='news__wrapper mobile-center'>
+			<h2 class='news__caption'>Новости и акции</h2>
+			<div class='news__post'>
+				<div class='news__date-wrapper'>
+					<div class='news__data'>29</div>
+					<time>сент</time>
+				</div>
+				<p class='news__tittle'>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+			</div>
+			<div class='news__post'>
+				<div class='news__date-wrapper'>
+					<div class='news__data'>29</div>
+					<time>сент</time>
+				</div>
+				<p class='news__tittle'>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+			</div>
+			<div class='news__post'>
+				<div class='news__date-wrapper'>
+					<div class='news__data'>29</div>
+					<time>сент</time>
+				</div>
+				<div class='news__tittle'></div>
+			</div>
+			<div class='news__post'>
+				<div class='news__date-wrapper'>
+					<div class='news__data'>29</div>
+					<time>сент</time>
+				</div>
+				<div class='news__tittle'></div>
+			</div>
+			<button class='news__btn-open btn'>Показать всё</button>
+		</div>
+	</section>
+
+	<section class='reviews'>
+		<div class='reviews__wrapper  mobile-center'>
+			<h2 class='reviews__caption'>Отзовы о нас</h2>
+			<input type='radio' id='reviews__person1' name='reviews' checked />
+			<input type='radio' id='reviews__person2' name='reviews' />
+			<input type='radio' id='reviews__person3' name='reviews' />
+
+			<div class='reviews__vision  reviews__vision--first'>
+				<div class='reviews__portrait'>
+					<img src='img/travis.png' width='50' height='50' alt='img-1' />
+				</div>
+				<div class='reviews__description'>
+					<h3 class='reviews__name'>Трэвис Баркер</h3>
+					<p class='reviews__tittle'>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+				</div>
+			</div>
+			<div class='reviews__vision  reviews__vision--second'>
+				<div class='reviews__portrait'>
+					<img src='img/freddurst.jpg' width='50' height='50' alt='img-2' />
+				</div>
+				<div class='reviews__description'>
+					<h3 class='reviews__name'>Адам Сендлер</h3>
+					<p class='reviews__tittle'>Durst and I exchanged some calls and texts over a few days, making sure we were a good fit, and it seemed like it was all-systems-go. My current album is a bomb, have you heard?</p>
+				</div>
+			</div>
+			<div class='reviews__vision  reviews__vision--third'>
+				<div class='reviews__portrait'>
+					<img src='img/sharonda.jpg' width='50' height='50' alt='img-3' />
+				</div>
+				<div class='reviews__description'>
+					<h3 class='reviews__name'>Sharon Den Adel</h3>
+					<p class='reviews__tittle'>Yeah, we are almost done with this tour. We only have a few shows left and then we’re off to the festivals. Festival season has already started.</p>
+				</div>
+			</div>
+			<div class='toogle toogle--reviews'>
+				<label for='reviews__person1'></label>
+				<label for='reviews__person2'></label>
+				<label for='reviews__person3'></label>
+			</div>
+		</div>
+	</section>
+
+	<footer class='footer'>
+		<div class='footer__wrapper mobile-center'>
+			<div class='footer__top'>
+				<h3 class='footer__caption'>Барбершоп Бородинский</h3>
+				<p>г. Санкт-Петербург <br>ул. Большая Конюшенная 19/8</p>
+				<a class='footer__phone' href='tel:78125556666'>+7 (812) 555-66-66</a>
+			</div>
+		</div>
+		<div class='footer__wrapper'>
+			<div class='footer__middle'>
+				<a class='footer__vkontakte' href='#'>vk</a>
+				<a class='footer__facebook' href='#'>fb</a>
+				<a class='footer__instagram' href='#'>inst</a>
+			</div>
+		</div>
+		<div class='footer__wrapper mobile-center'>
+			<div class='footer__bottom'>
+				<p class='footer__developer'>Разработано:</p>
+				<a class='footer__dev-link' href='#'>HTMLACADEMY</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

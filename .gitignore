@@ -1,0 +1,22 @@
+# [ base ]
+
+node_modules/
+bower_components/
+Thumbs.db
+.DS_Store
+prepros.cfg
+
+# [ main ]
+build/
+$ource/
+*.css
+
+# [ other ]
+
+*.log
+*.sublime*
+*.map
+.idea
+*.psd
+*.ai
+*.pdf

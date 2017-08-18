@@ -1,0 +1,217 @@
+.statistics
+	width 320px
+	margin 0px auto
+	display flex
+	flex-direction column
+
+.statistics__caption
+	font-size 30px
+	line-height 30px
+	padding 0px 30px
+	text-transform uppercase
+	text-align center
+
+.statistics__description
+	padding 0px 20px
+	font-size 20px
+	line-height 27px
+	text-align center
+
+.statistics__lists
+	padding 0px
+	margin 0px
+	list-style none
+
+.statistics__list
+	display flex
+	justify-content space-between
+	padding 20px 0px
+
+.statistics__list--money
+	background-color #404040
+
+.statistics__list--time
+	background-color #4e4e4e
+	align-items center
+
+.statistics__list--count
+	background-color #353535
+	align-items center
+
+.statistics__list--likes
+	background-color #404040
+
+.statistics__sum
+	font-size 40px
+	line-height 18px
+	font-weight 700
+	color white
+
+.statistics__title
+	font-size 18px
+	line-height 18px
+	font-weight 400
+	color white
+	width 110px
+	text-align right
+
+.statistics__lists sup
+	padding-left 8px
+	font-size 24px
+
+.statistics__footnote
+	font-size 20px
+	line-height 27px
+	background-color #242424
+	color rgba(255,255,255, 0.3)
+	padding 20px 20px 20px 45px
+
+.statistics__footnote--desktop
+	display none
+
+
+// adaptive for < T A B L E T >
+
+@media only screen and (min-width 550px)
+	.statistics
+		width 100%
+
+	.statistics__inner--bg
+		padding-top 200px
+		background-image url('../img/back-tablet.jpg')
+		background-repeat no-repeat
+		background-size cover
+
+	.statistics__inner--color
+		background-color #353535
+
+	.statistics__section1
+		width 85%
+		max-width 640px
+		position relative
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-items center
+		margin 0 auto
+		background-color white
+
+		&::before
+			content ''
+			position absolute
+			top 41px
+			left -20px
+			border-top 20px solid white
+			border-left 20px solid transparent
+			border-right none
+			border-bottom none
+
+	.statistics__caption
+		width calc(47% - 60px)
+		font-size 40px
+		line-height 40px
+		text-transform none
+		margin-top 30px
+		margin-bottom 10px
+
+	.statistics__description
+		margin-top 35px
+		width calc(50% - 60px)
+
+	.statistics__section2
+		width 85%
+		max-width 640px
+		margin 0 auto
+
+	.statistics__footnote--mobile
+		display none
+
+	.statistics__footnote--desktop
+		display block
+		width 100%
+		padding 10px 20px 30px 45px
+		background-color transparent
+		color rgba(0,0,0, 0.3)
+
+	.statistics__lists
+		display flex
+		flex-wrap wrap
+
+	.statistics__list
+		width calc(50% - 40px)
+		padding 15px 0px
+		flex-direction column
+		align-items flex-start
+
+		&:nth-child(3n+1) .statistics__sum::after
+			content '*'
+			position absolute
+			top 0px
+			right -10px
+			font-size 30px
+
+
+	.statistics__sum // min 45px _ max 70px
+		position relative
+		font-size calc( (100vw - 550px) / (970 - 550) * (70 - 45) + 45px)
+		line-height 56px
+		padding 20px 10px 10px
+
+	.statistics__title
+		width auto
+		padding-left 10px
+		padding-bottom 25px
+
+
+
+// adaptive for < D E S K T O P >
+
+@media only screen and (min-width 977px)
+	.statistics // width 100%
+		flex-flow row wrap
+		background-image url(../img/back-desktop.jpg)
+		background-repeat no-repeat
+		background-position 50% -57%
+		/* background-size contain */
+		background-color #353535
+		outline 2px solid red
+		outline-offset -4px
+
+	.statistics__wrapper
+		display flex
+		flex-flow row wrap
+		width 960px
+		margin 0px auto
+		padding-top 500px
+		outline 3px dotted purple
+
+	.statistics__inner--bg
+		width 320px
+		padding-top 0px
+		outline 2px solid yellow
+		outline-offset -2px
+		background none
+
+	.statistics__inner--color
+		width 640px
+		outline 2px solid blue
+		outline-offset -2px
+
+	.statistics__section1
+		width auto
+		flex-direction column
+
+	.statistics__section2
+		width auto
+		flex-direction column
+
+	.statistics__caption
+		width auto
+		padding-right 70px
+
+	.statistics__description
+		width auto
+		padding-right 70px
+
+	.statistics__sum
+		font-size 72px

@@ -1,0 +1,95 @@
+.reviews
+	width 320px
+	position relative
+	margin 0px auto
+	background-color white
+	margin-bottom 20px
+	// outline 1px solid violet
+
+	&::after
+		content ''
+		position absolute
+		bottom -20px
+		background-color yellow
+		border-left  160px solid #292929
+		border-right 160px solid #292929
+		border-top 35px solid white
+		border-bottom 0px
+		box-shadow 0px 1px 0px 0px #353535
+
+.reviews__wrapper
+	display flex
+	flex-direction column
+
+	input
+		display none
+
+.reviews__caption
+	font-size 30px
+	line-height 30px
+	font-weight 700
+	text-transform uppercase
+	text-align center
+
+
+
+.reviews__vision
+	display none
+	min-height 300px
+	margin-bottom 10px
+	// outline 1px dashed red
+
+
+[for^='reviews']
+	position absolute
+	width 6px
+	height 6px
+	border 2px solid #959595
+	background-color transparent
+	transform rotate(45deg)
+	cursor pointer
+
+[for='reviews__person1']
+	top 0px
+	left 0px
+[for='reviews__person2']
+	top 0px
+	left 50px
+[for='reviews__person3']
+	top 0px
+	left 100px
+
+#reviews__person1:checked ~ .toogle [for='reviews__person1']
+#reviews__person2:checked ~ .toogle [for='reviews__person2']
+#reviews__person3:checked ~ .toogle [for='reviews__person3']
+	background-color #353535
+	border-color #353535
+
+#reviews__person1:checked ~ .reviews__vision--first
+	display flex
+
+#reviews__person2:checked ~ .reviews__vision--second
+	display flex
+
+#reviews__person3:checked ~ .reviews__vision--third
+	display flex
+
+.reviews__description
+	width 210px
+
+.reviews__portrait
+	margin-top 10px
+	margin-right 20px
+	width 50px
+	height 50px
+
+.reviews__name
+	font-size 24px
+	line-height 27px
+
+.reviews__tittle
+	font-size 18px
+	line-height 27px
+
+.toogle--reviews
+	top -30px

@@ -1,0 +1,210 @@
+body
+	margin 0px
+	padding 0px
+	font-family 'PT Sans Narrow', arial, sans-serif
+	font-weight 400
+
+.header-top
+	width 320px
+	position relative
+	margin 0px auto
+	background-color rgba(222,222,222, 0.111)
+	font-size 2em
+
+.header-top__logo-wrapper
+	min-height 85px
+	box-sizing border-box
+	padding 29px 0px 25px 0px
+	background-color #242424
+
+	.header-top__logo
+		display block
+		margin 0px auto
+		width 226px
+		height 30px
+
+#hamburger
+	display none
+
+.hamburger-menu
+	display block
+	width 100%
+	height 50px
+	position relative
+	text-align center
+	background-color #826550
+	font-weight 700
+	font-size 18px
+	line-height 46px
+	color white
+	text-transform uppercase
+
+	&::before
+		content ''
+		width 70px
+		height 50px
+		position absolute
+		top 0px
+		right 0px
+		background-color #6a4d38
+	&::after
+		content ''
+		position absolute
+		top 2px
+		right 10px
+		width 45px
+		height 50px
+		box-shadow inset 0 10px 0 0 #6a4d38, inset 0 13px 0 0 white, inset 0 20px 0px 0px #6a4d38, inset 0 23px 0px 0px white, inset 0 30px 0px 0px #6a4d38, inset 0 33px 0px 0px white
+		cursor pointer
+
+.main-menu
+	display none
+	padding 0px
+	margin 0px
+	width 250px
+	position absolute
+	top 85px
+	margin-left 70px
+	flex-direction row
+	flex-wrap wrap
+	align-items flex-start
+	background-color #826550
+	list-style none
+	// -webkit-tap-highlight-color rgba(1,1,1, 0.3)
+
+
+	li
+		width 100%
+
+		&:last-child a
+			box-shadow none
+
+.main-menu__link
+	display block
+	width calc(100% - 40px)
+	padding 13px 20px
+	font-size 18px
+	line-height 24px
+	font-weight bold
+	color white
+	text-decoration none
+	box-shadow 0 1px 0px 0px #71543f, 0 2px 0px 0px #886e5b
+
+	&:hover
+		background-color #614632
+
+#hamburger:checked ~ .main-menu
+	display flex
+
+#hamburger:checked ~ .hamburger-menu::before
+	left 0px
+
+#hamburger:checked ~ .hamburger-menu::after
+	content '\2573'
+	font-size 150%
+	color white
+	width 70px
+	height 50px
+	top 0px
+	left 0px
+	box-shadow none
+
+.main-menu--logout
+	font-weight 400
+	padding-left 40px
+	padding-right 0px
+	background url('../img/login.png') no-repeat 15px 50%
+
+
+
+// adaptive for < T A B L E T >
+
+@media (min-width 550px)
+	.header-top
+		width 100%
+		background-color black
+
+
+	.header-top__wrapper
+		width 85%
+		max-width 640px
+		margin 0px auto
+
+	.main-menu
+		display flex
+		width 100%
+		max-width 640px
+		position static
+		top 0px
+		margin-left auto
+		margin-right auto
+		background-color black
+		outline 1px dotted red
+
+		li
+			width auto
+
+	.main-menu__link
+		padding 25px 15px
+		width auto
+		box-shadow none
+		font-size 1.8vw
+		text-transform uppercase
+
+	.main-menu__link--active
+		box-shadow 0 3px 0px 0px #826550
+
+	.main-menu--logout
+		padding-left 25px
+		padding-right  25px
+		background-position-x 15px
+		text-indent -1000px
+		overflow hidden
+
+	.hamburger-menu
+		display none
+
+	.header-top__logo-wrapper
+		position absolute
+		top 100px
+		left 50%
+		margin-left -113px
+
+	.main-menu li:last-child
+		margin-left auto
+
+
+
+
+
+
+// adaptive for < D E S K T O P >
+
+@media (min-width: 977px)
+	.header-top
+		width 100%
+
+	.header-top__wrapper
+		max-width 960px
+		width 100%
+
+	.main-menu
+		max-width 960px
+
+	.main-menu__link
+		padding 25px 33px
+		font-size 1.3vw
+
+	.main-menu--logout
+		padding-right 30px
+		text-indent 0
+		background-position-x 0px
+		font-weight 700
+
+
+
+// adaptive for < HI RESOLUTION DESKTOP >
+
+@media only screen and (min-width 1500px)
+	.main-menu__link
+		font-size 20px

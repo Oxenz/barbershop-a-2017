@@ -1,0 +1,214 @@
+.advantages
+	width 320px
+	min-height 350px
+	margin 0px auto
+	display flex
+	flex-direction column
+	background-color #242424
+	position relative
+	text-align center
+	// outline 1px solid violet
+
+	&::after
+		content ''
+		position absolute
+		bottom 0px
+		background-color yellow
+		border-left  160px solid white
+		border-right 160px solid white
+		border-top 35px solid #242424
+		border-bottom none
+
+	input
+		display none
+
+.advantages__wrapper
+	padding 0px 40px
+
+
+.advantages__fast
+.advantages__cool
+.advantages__expensive
+	color white
+	display none
+	min-height 255px
+
+.advantages__fast
+	background #242424 url('../img/advantage-1.png') no-repeat 50% 0%
+
+.advantages__cool
+	background #242424 url('../img/advantage-2.png') no-repeat 50% 0%
+
+.advantages__expensive
+	background #242424 url('../img/advantage-3.png') no-repeat 50% 0%
+
+.toogle
+	position relative
+	display table
+	margin 0px auto
+	transform translateX(-60px)
+
+[for='advantages__fast']
+[for='advantages__cool']
+[for='advantages__expensive']
+	position absolute
+	width 6px
+	height 6px
+	border 2px solid #959595
+	background-color transparent
+	transform rotate(45deg)
+	cursor pointer
+
+#advantages__fast:checked ~ .toogle [for='advantages__fast']
+#advantages__cool:checked ~ .toogle [for='advantages__cool']
+#advantages__expensive:checked ~ .toogle [for='advantages__expensive']
+	background-color white
+	border-color white
+
+
+[for='advantages__fast']
+	top 0px
+	left 0px
+[for='advantages__cool']
+	top 0px
+	left 50px
+[for='advantages__expensive']
+	top 0px
+	left 100px
+
+
+#advantages__fast:checked ~ .advantages__fast
+	display block
+
+#advantages__cool:checked ~ .advantages__cool
+	display block
+
+#advantages__expensive:checked ~ .advantages__expensive
+	display block
+
+.advantages__caption
+	padding-top 110px
+
+
+// adaptive for < T A B L E T >
+
+@media only screen and (min-width 550px)
+	.advantages
+		width 100%
+		padding-bottom 30px
+		overflow hidden
+
+		&::after
+			content ''
+			position absolute
+			bottom 0px
+			background-color yellow
+			border-left  calc(50vw) solid white
+			border-right calc(50vw) solid white
+			border-top 35px solid #242424
+			border-bottom none
+			left 50%
+			transform translateX(-50%)
+
+	.advantages__wrapper
+		display flex
+		flex-direction column
+		max-width 640px
+		box-sizing border-box
+		width 85%
+		margin 0px auto
+
+		// outline 1px solid blue
+		outline-offset -1px
+
+	.advantages__fast
+	.advantages__cool
+	.advantages__expensive
+		display flex
+		flex-direction column
+		padding 35px 0px 35px 160px
+		min-height auto
+		// outline 1px solid red
+		outline-offset -1px
+		box-shadow 0px 1px 0px 0px #4a4a4a
+		text-align left
+
+	.advantages__expensive
+		box-shadow none
+
+	.advantages__fast
+		background url('../img/advantage-1.png') no-repeat 0% 50%
+
+	.advantages__cool
+		background url('../img/advantage-2.png') no-repeat 0% 50%
+
+	.advantages__expensive
+		background url('../img/advantage-3.png') no-repeat 0% 50%
+
+	.advantages__caption
+		margin-bottom 0px
+		padding-top 0px
+		text-transform uppercase
+
+	.advantages__tittle
+		margin 5px 0px 13px 0px
+
+
+	#advantages__fast:checked ~ .advantages__fast
+		display flex
+
+	.toogle
+		display none
+
+
+// adaptive for < D E S K T O P >
+
+@media only screen and (min-width 977px)
+	.advantages
+		outline 1px dotted violet
+		outline-offset -2px
+		padding-bottom 50px
+
+		&::after
+			bottom 0px
+			border-top 55px solid #242424
+
+
+	.advantages__wrapper
+		flex-direction row
+		width 100%
+		max-width 960px
+		outline 1px dotted red
+		outline-offset -1px
+
+	.advantages__fast
+	.advantages__cool
+	.advantages__expensive
+		padding 0px
+		text-align center
+
+	.advantages__caption
+		padding-top 190px
+
+	.advantages__tittle
+		margin 15px 0px 35px 0px
+		font-size 20px
+		line-height 27px
+
+	.advantages__fast
+		background url('../img/advantage-1.png') no-repeat 37% 30%
+
+	.advantages__cool
+		background url('../img/advantage-2.png') no-repeat 50% 30%
+
+	.advantages__expensive
+		background url('../img/advantage-3.png') no-repeat 61% 30%
+
+	.advantages__fast
+		padding-right 50px
+
+	.advantages__cool
+		padding 0 25px
+
+	.advantages__expensive
+		padding-left 50px

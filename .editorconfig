@@ -1,0 +1,24 @@
+# Файл с настройками для редактора, перечень возможностей можно посмотреть тут http://editorconfig.org
+# detailed faq https://habrahabr.ru/post/220131/
+# detailed manual https://blog.zwezdin.com/2017/vs-2017-editorconfig/
+
+# Виды окончания строк
+# Windows - \r\n или CRLF (код 0D0A)
+# Unix - \n или LF (код 0A)
+# Mac - \r или CR (код 0D).
+
+# Для Sublime Text https://packagecontrol.io/packages/EditorConfig
+# 1 ctrl+shit+p
+# 2 install package
+# 3 search 'EditorConfig'
+# 4 profit
+
+root = true
+
+[*]
+charset = utf-8
+indent_style = tab
+indent_size = 2
+end_of_line = crlf
+trim_trailing_whitespace = true
+insert_final_newline = true
