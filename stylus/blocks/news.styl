@@ -40,6 +40,7 @@
 	font-size 30px
 	line-height 20px
 	font-weight 700
+	text-align center
 
 	&::after
 		content ''
@@ -75,3 +76,69 @@
 	border 1px solid #e5ddd5
 	background-color transparent
 	color
+
+
+// adaptive for < T A B L E T >
+
+@media only screen and (min-width 550px)
+	.news
+		width 100%
+		padding-top 50px
+		box-shadow 0px 1px 0px 0px #e5ddd5
+
+	.news__wrapper
+		width 85%
+		max-width 640px
+		box-sizing border-box
+		margin 0px auto
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		width 100%
+
+	.news__btn-open
+		order -1
+		max-width 160px
+
+	.news__caption
+		order -2
+		margin 0px
+		margin-top 15px
+		font-size 40px
+
+	.news__post
+		box-shadow none
+
+// Если применить, то будет как на макете, но на телефоне не будет отступов
+// текст будет прижат к краям, при ландшафтном формате
+// Сейчас отступы включены, смотриться хорошо, но это отхождение от макета
+	// .news__wrapper.mobile-center
+	// 	padding 0px
+
+// adaptive for < D E S K T O P >
+
+@media only screen and (min-width 977px)
+	.news__wrapper
+		width 100%
+		max-width 960px
+
+	.news__post
+		margin-top 50px
+
+	.news__post:nth-of-type(3)
+		display flex
+
+	.news__post:nth-of-type(1n+4)
+		display none
+
+	.news__caption
+		width 70%
+		text-align left
+		margin-right auto
+
+	.news__btn-open
+		margin-left auto
+
+// adaptive for < HI RESOLUTION DESKTOP >
+
+

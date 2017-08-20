@@ -31,8 +31,6 @@
 	text-transform uppercase
 	text-align center
 
-
-
 .reviews__vision
 	display none
 	min-height 300px
@@ -40,7 +38,7 @@
 	// outline 1px dashed red
 
 
-[for^='reviews']
+.toogle--reviews label
 	position absolute
 	width 6px
 	height 6px
@@ -49,19 +47,21 @@
 	transform rotate(45deg)
 	cursor pointer
 
-[for='reviews__person1']
+.toogle--reviews [for='reviews__person1']
 	top 0px
 	left 0px
-[for='reviews__person2']
+
+.toogle--reviews [for='reviews__person2']
 	top 0px
 	left 50px
-[for='reviews__person3']
+
+.toogle--reviews [for='reviews__person3']
 	top 0px
 	left 100px
 
-#reviews__person1:checked ~ .toogle [for='reviews__person1']
-#reviews__person2:checked ~ .toogle [for='reviews__person2']
-#reviews__person3:checked ~ .toogle [for='reviews__person3']
+#reviews__person1:checked ~ .toogle--reviews [for='reviews__person1']
+#reviews__person2:checked ~ .toogle--reviews [for='reviews__person2']
+#reviews__person3:checked ~ .toogle--reviews [for='reviews__person3']
 	background-color #353535
 	border-color #353535
 
@@ -93,3 +93,129 @@
 
 .toogle--reviews
 	top -30px
+
+.reviews__btn-write
+	display none
+	box-sizing border-box
+	padding 17px 20px
+	width 100%
+	font-size 18px
+	line-height 24px
+	font-family 'PT Sans Narrow'
+	font-weight 700
+	text-transform uppercase
+	border 1px solid #e5ddd5
+	background-color transparent
+
+.slider-arrow
+	display none
+
+
+
+
+// adaptive for < T A B L E T >
+
+@media only screen and (min-width 550px)
+	.reviews
+		width 85%
+		max-width 640px
+		box-sizing border-box
+		outline-offset -2px
+		background-color #f8f5f2
+
+		&::after
+			display none
+
+	.reviews__wrapper
+		flex-flow row wrap
+		justify-content space-between
+		position relative
+
+	.reviews__caption
+		order -2
+		margin 0px
+		margin-top 15px
+		font-size 40px
+		width 50%
+		text-align left
+
+
+	.reviews__description
+		width auto
+
+	.reviews__btn-write
+		display flex
+		order -1
+		max-width 160px
+
+	.slider-arrow
+		display block
+		position absolute
+		top 60%
+		left 0px
+		width 100%
+
+	.toogle--reviews
+		width 110px
+		height 30px
+		transform none
+		background-color #f8f5f2
+
+
+	.toogle--reviews [for='reviews__person1']
+		top 12px
+		left 25px
+
+	.toogle--reviews [for='reviews__person2']
+		top 12px
+		left 50px
+
+	.toogle--reviews [for='reviews__person3']
+		top 12px
+		left 75px
+
+	.slider-arrow label
+		position  absolute
+		border-top 6px solid transparent
+		border-bottom 6px solid transparent
+
+	#reviews__person1:checked ~ .slider-arrow label:nth-child(3)
+	#reviews__person2:checked ~ .slider-arrow label:nth-child(1)
+	#reviews__person3:checked ~ .slider-arrow label:nth-child(2)
+		border-right 12px solid black
+		// outline 2px dotted red
+		left 13px
+
+
+	#reviews__person1:checked ~ .slider-arrow label:nth-child(2)
+	#reviews__person2:checked ~ .slider-arrow label:nth-child(3)
+	#reviews__person3:checked ~ .slider-arrow label:nth-child(1)
+		border-left 12px solid black
+		// outline 2px dotted black
+		right 13px
+
+
+	.reviews__name
+		margin-top 0px
+
+	.reviews__vision
+		margin-left 30px
+		margin-right 30px
+		margin-top 35px
+
+		padding-top 20px
+		padding-left 30px
+		min-height 200px
+		outline 1px solid #e5ddd5
+
+	.reviews__portrait img
+		border-radius 50%
+
+
+
+// adaptive for < D E S K T O P >
+
+@media only screen and (min-width 977px)
+	.reviews
+		color red
+
