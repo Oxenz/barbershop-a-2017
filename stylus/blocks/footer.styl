@@ -4,14 +4,6 @@
 	background-color #292929
 	color white
 
-.footer__wrapper
-	display flex
-	flex-direction column
-	justify-content center
-
-.footer__top
-	margin-bottom 25px
-
 .footer__caption
 	margin-bottom 10px
 	font-size 18px
@@ -19,11 +11,7 @@
 	font-weight 700
 	text-align center
 
-.footer__top p
-	color white
-	text-align center
-
-.footer__phone
+.footer__phone-a
 	display block
 	padding 15px 20px
 	font-size 18px
@@ -35,8 +23,28 @@
 	text-align center
 	text-decoration none
 
+.footer__phone-span
+	display none
+
+.footer__top
+	display flex
+	flex-direction column
+	margin-bottom 25px
+
 .footer__middle
 	display flex
+
+.footer__bottom
+	display flex
+	flex-direction column
+	align-items center
+	padding-bottom 25px
+
+.footer__top p
+	width 175px
+	align-self center
+	text-align center
+	color white
 
 .footer__vkontakte
 	display block
@@ -58,7 +66,6 @@
 	border 1px solid #3e3e3e
 	border-right none
 
-
 .footer__instagram
 	display block
 	width 106px
@@ -68,11 +75,8 @@
 	overflow hidden
 	border 1px solid #3e3e3e
 
-.footer__bottom
-	display flex
-	flex-direction column
-	align-items center
-	margin-bottom 20px
+.footer__social-text
+	display none
 
 .footer__developer
 	font-size 18px
@@ -92,3 +96,111 @@
 	text-decoration none
 	outline 1px solid #3e3e3e
 	outline-offset -1px
+
+
+
+
+// adaptive for < T A B L E T >
+
+@media only screen and (min-width 550px)
+	.footer
+		width 100%
+		display flex
+		flex-flow row wrap
+
+	.footer__wrapper
+		width 85%
+		max-width 640px
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		margin 0px auto
+		margin-bottom 60px
+		box-sizing border-box
+
+	.footer__inner--top
+		width auto
+		order 1
+
+	.footer__inner--middle
+		width 100%
+		order 3
+		margin-top 30px
+
+	.footer__inner--bottom
+		width auto
+		order 2
+
+	.mobile-center.footer__inner--top
+	.mobile-center.footer__inner--bottom
+		padding 0px
+
+	.footer__caption
+		margin-top 35px
+		margin-bottom 0px
+		text-align left
+
+	.footer__top p
+		width auto
+		margin-bottom 5px
+
+	.footer__phone-a
+		display none
+
+	.footer__phone-span
+		display block
+
+	.footer__dev-link
+		width auto
+		padding 15px 30px
+
+	.footer__vkontakte
+	.footer__facebook
+	.footer__instagram
+		width 212px
+
+
+
+
+// adaptive for < D E S K T O P >
+
+@media only screen and (min-width 977px)
+	.footer__wrapper
+		width 100%
+		max-width 960px
+
+	.footer__inner--top
+		margin-top 13px
+
+	.footer__inner--middle
+		width auto
+		order 2
+		margin-top 55px
+		margin-bottom 0px
+		margin-right 107px
+
+	.footer__inner--bottom
+		margin-top 13px
+		width auto
+		order 3
+
+	.footer__middle
+		margin-left -6px
+		flex-wrap wrap
+		justify-content center
+
+	.footer__vkontakte
+	.footer__facebook
+	.footer__instagram
+		width 48px
+		height 48px
+		margin-left 6px
+		border 1px solid #3e3e3e
+
+	.footer__social-text
+		display block
+		width 100%
+		font-size 18px
+		line-height 27px
+		text-align center
+		margin-top 0px

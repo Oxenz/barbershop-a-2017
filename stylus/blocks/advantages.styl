@@ -7,7 +7,6 @@
 	background-color #242424
 	position relative
 	text-align center
-	// outline 1px solid violet
 
 	&::after
 		content ''
@@ -24,7 +23,6 @@
 
 .advantages__wrapper
 	padding 0px 40px
-
 
 .advantages__fast
 .advantages__cool
@@ -76,7 +74,6 @@
 	top 0px
 	left 100px
 
-
 #advantages__fast:checked ~ .advantages__fast
 	display block
 
@@ -90,6 +87,8 @@
 	padding-top 110px
 
 
+
+
 // adaptive for < T A B L E T >
 
 @media only screen and (min-width 550px)
@@ -97,15 +96,16 @@
 		width 100%
 		padding-bottom 30px
 		overflow hidden
+		background-color #353535
 
 		&::after
 			content ''
 			position absolute
 			bottom 0px
-			background-color #242424
+			background-color #353535
 			border-left  calc(50vw) solid white
 			border-right calc(50vw) solid white
-			border-top 35px solid #242424
+			border-top 35px solid #353535
 			border-bottom none
 			left 50%
 			transform translateX(-50%)
@@ -118,9 +118,6 @@
 		width 85%
 		margin 0px auto
 
-		// outline 1px solid blue
-		outline-offset -1px
-
 	.advantages__fast
 	.advantages__cool
 	.advantages__expensive
@@ -128,8 +125,6 @@
 		flex-direction column
 		padding 35px 0px 35px 160px
 		min-height auto
-		// outline 1px solid red
-		outline-offset -1px
 		box-shadow 0px 1px 0px 0px #4a4a4a
 		text-align left
 
@@ -153,7 +148,6 @@
 	.advantages__tittle
 		margin 5px 0px 13px 0px
 
-
 	#advantages__fast:checked ~ .advantages__fast
 		display flex
 
@@ -165,21 +159,16 @@
 
 @media only screen and (min-width 977px)
 	.advantages
-		outline 1px dotted violet
-		outline-offset -2px
 		padding-bottom 50px
 
 		&::after
 			bottom 0px
-			border-top 55px solid #242424
-
+			border-top 55px solid #353535
 
 	.advantages__wrapper
 		flex-direction row
 		width 100%
 		max-width 960px
-		outline 1px dotted red
-		outline-offset -1px
 
 	.advantages__fast
 	.advantages__cool

@@ -70,6 +70,8 @@
 	display none
 
 
+
+
 // adaptive for < T A B L E T >
 
 @media only screen and (min-width 550px)
@@ -139,7 +141,7 @@
 
 	.statistics__list
 		width calc(50% - 40px)
-		padding 15px 0px
+		padding 16.5px 0px
 		flex-direction column
 		align-items flex-start
 
@@ -149,7 +151,6 @@
 			top 0px
 			right -10px
 			font-size 30px
-
 
 	.statistics__sum // min 45px _ max 70px
 		position relative
@@ -164,18 +165,16 @@
 
 
 
+
 // adaptive for < D E S K T O P >
 
 @media only screen and (min-width 977px)
-	.statistics // width 100%
+	.statistics
 		flex-flow row wrap
 		background-image url(../img/back-desktop.jpg)
 		background-repeat no-repeat
 		background-position 50% -57%
-		/* background-size contain */
 		background-color #353535
-		outline 2px solid red
-		outline-offset -4px
 
 	.statistics__wrapper
 		display flex
@@ -183,19 +182,14 @@
 		width 960px
 		margin 0px auto
 		padding-top 500px
-		outline 3px dotted purple
 
 	.statistics__inner--bg
 		width 320px
 		padding-top 0px
-		outline 2px solid yellow
-		outline-offset -2px
 		background none
 
 	.statistics__inner--color
 		width 640px
-		outline 2px solid blue
-		outline-offset -2px
 
 	.statistics__section1
 		width auto

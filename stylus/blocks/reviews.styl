@@ -4,13 +4,12 @@
 	margin 0px auto
 	background-color white
 	margin-bottom 20px
-	// outline 1px solid violet
 
 	&::after
 		content ''
 		position absolute
 		bottom -20px
-		background-color yellow
+		background-color #292929
 		border-left  160px solid #292929
 		border-right 160px solid #292929
 		border-top 35px solid white
@@ -31,11 +30,51 @@
 	text-transform uppercase
 	text-align center
 
-.reviews__vision
+.reviews__box
 	display none
 	min-height 300px
 	margin-bottom 10px
-	// outline 1px dashed red
+
+.reviews__portrait
+	margin-top 10px
+	margin-right 20px
+	width 50px
+	height 50px
+
+.reviews__portrait img
+	width 100%
+	max-width 100%
+	height auto
+
+.reviews__description
+	width 210px
+
+.reviews__name
+	font-size 24px
+	line-height 27px
+
+.reviews__tittle
+	font-size 18px
+	line-height 27px
+
+.reviews__btn-write
+	width 100%
+	display none
+	padding 17px 20px
+	box-sizing border-box
+	font-size 18px
+	line-height 24px
+	font-family 'PT Sans Narrow'
+	font-weight 700
+	text-transform uppercase
+	border 1px solid #e5ddd5
+	background-color transparent
+
+.toogle--reviews
+	top -30px
+
+.slider-arrow
+	display none
 
 
 .toogle--reviews label
@@ -65,50 +104,14 @@
 	background-color #353535
 	border-color #353535
 
-#reviews__person1:checked ~ .reviews__vision--first
+#reviews__person1:checked ~ .reviews__box--first
 	display flex
 
-#reviews__person2:checked ~ .reviews__vision--second
+#reviews__person2:checked ~ .reviews__box--second
 	display flex
 
-#reviews__person3:checked ~ .reviews__vision--third
+#reviews__person3:checked ~ .reviews__box--third
 	display flex
-
-.reviews__description
-	width 210px
-
-.reviews__portrait
-	margin-top 10px
-	margin-right 20px
-	width 50px
-	height 50px
-
-.reviews__name
-	font-size 24px
-	line-height 27px
-
-.reviews__tittle
-	font-size 18px
-	line-height 27px
-
-.toogle--reviews
-	top -30px
-
-.reviews__btn-write
-	display none
-	box-sizing border-box
-	padding 17px 20px
-	width 100%
-	font-size 18px
-	line-height 24px
-	font-family 'PT Sans Narrow'
-	font-weight 700
-	text-transform uppercase
-	border 1px solid #e5ddd5
-	background-color transparent
-
-.slider-arrow
-	display none
 
 
 
@@ -120,16 +123,16 @@
 		width 85%
 		max-width 640px
 		box-sizing border-box
-		outline-offset -2px
 		background-color #f8f5f2
 
 		&::after
 			display none
 
 	.reviews__wrapper
+		position relative
+		margin-top 30px
 		flex-flow row wrap
 		justify-content space-between
-		position relative
 
 	.reviews__caption
 		order -2
@@ -139,9 +142,31 @@
 		width 50%
 		text-align left
 
+	.reviews__box
+		margin-left 30px
+		margin-right 30px
+		margin-top 35px
+		padding-top 20px
+		padding-left 30px
+		min-height 200px
+		outline 1px solid #e5ddd5
+
+	.reviews__portrait
+		width 80px
+		height 80px
+
+	.reviews__portrait img
+		width 100%
+		max-width 100%
+		height auto
+		border-radius 50%
 
 	.reviews__description
-		width auto
+		width 100%
+		max-width 410px
+
+	.reviews__name
+		margin-top 0px
 
 	.reviews__btn-write
 		display flex
@@ -183,33 +208,14 @@
 	#reviews__person2:checked ~ .slider-arrow label:nth-child(1)
 	#reviews__person3:checked ~ .slider-arrow label:nth-child(2)
 		border-right 12px solid black
-		// outline 2px dotted red
-		left 13px
-
+		left 20px
 
 	#reviews__person1:checked ~ .slider-arrow label:nth-child(2)
 	#reviews__person2:checked ~ .slider-arrow label:nth-child(3)
 	#reviews__person3:checked ~ .slider-arrow label:nth-child(1)
 		border-left 12px solid black
-		// outline 2px dotted black
-		right 13px
+		right 23px
 
-
-	.reviews__name
-		margin-top 0px
-
-	.reviews__vision
-		margin-left 30px
-		margin-right 30px
-		margin-top 35px
-
-		padding-top 20px
-		padding-left 30px
-		min-height 200px
-		outline 1px solid #e5ddd5
-
-	.reviews__portrait img
-		border-radius 50%
 
 
 
@@ -217,5 +223,40 @@
 
 @media only screen and (min-width 977px)
 	.reviews
-		color red
+		width 100%
+		max-width 960px
+		margin-bottom 30px
+
+	.reviews__box
+		min-height 160px
+		outline none
+
+	.reviews__portrait
+		margin-top 0px
+		margin-right 0px
+		width 249px
+		height 160px
+
+	.reviews__portrait img
+		width 100%
+		max-width 100%
+		height auto
+		border-radius 0
+
+	.reviews__description
+		width 100%
+		max-width 490px
+		padding-left 70px
+		outline 1px solid #e5ddd5
+
+	.reviews__name
+		margin-top 24px
+
+	.reviews__tittle
+		margin 0px
+
+	.toogle--reviews
+		top 0px
+
+
 

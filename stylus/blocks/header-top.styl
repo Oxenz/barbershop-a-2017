@@ -18,11 +18,11 @@ body
 	padding 29px 0px 25px 0px
 	background-color #242424
 
-	.header-top__logo
-		display block
-		margin 0px auto
-		width 226px
-		height 30px
+.header-top__logo
+	display block
+	margin 0px auto
+	width 226px
+	height 30px
 
 #hamburger
 	display none
@@ -48,6 +48,7 @@ body
 		top 0px
 		right 0px
 		background-color #6a4d38
+
 	&::after
 		content ''
 		position absolute
@@ -71,8 +72,6 @@ body
 	align-items flex-start
 	background-color #826550
 	list-style none
-	// -webkit-tap-highlight-color rgba(1,1,1, 0.3)
-
 
 	li
 		width 100%
@@ -118,6 +117,7 @@ body
 
 
 
+
 // adaptive for < T A B L E T >
 
 @media (min-width 550px)
@@ -125,11 +125,25 @@ body
 		width 100%
 		background-color black
 
-
 	.header-top__wrapper
 		width 85%
 		max-width 640px
 		margin 0px auto
+
+	.header-top__logo-wrapper
+		position absolute
+		top 85px
+		left 50%
+		margin-left -185px
+		background-color transparent
+
+	.header-top__logo
+		width 100%
+		height auto
+		max-width 100%
+
+	.hamburger-menu
+		display none
 
 	.main-menu
 		display flex
@@ -140,7 +154,6 @@ body
 		margin-left auto
 		margin-right auto
 		background-color black
-		outline 1px dotted red
 
 		li
 			width auto
@@ -162,19 +175,8 @@ body
 		text-indent -1000px
 		overflow hidden
 
-	.hamburger-menu
-		display none
-
-	.header-top__logo-wrapper
-		position absolute
-		top 100px
-		left 50%
-		margin-left -113px
-
 	.main-menu li:last-child
 		margin-left auto
-
-
 
 
 
@@ -189,6 +191,9 @@ body
 		max-width 960px
 		width 100%
 
+	.header-top__logo-wrapper
+		top 105px
+
 	.main-menu
 		max-width 960px
 
@@ -201,6 +206,8 @@ body
 		text-indent 0
 		background-position-x 0px
 		font-weight 700
+
+
 
 
 
