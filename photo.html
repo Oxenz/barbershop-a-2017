@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8' />
+	<title>Photo</title>
+	<!-- <link rel='stylesheet' href='css/style.min.css' /> -->
+	<link rel='stylesheet' href='css/style.css' />
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<meta name='format-detection' content='telephone=yes'>
+</head>
+<body>
+
+	<header class='header-top'>
+		<div class='header-top__wrapper'>
+			<div class='header-top__logo-wrapper'>
+				<picture>
+					<source media='(min-width: 977px)' srcset='img/icons/logotype-desk.png'>
+					<source media='(min-width: 550px)' srcset='img/icons/logotype-tab.png'>
+					<img class='header-top__logo' src='img/icons/logotype-mob.png' alt='logotype borodinskiy' />
+				</picture>
+			</div>
+			<input type='checkbox' id='hamburger' />
+			<label for='hamburger' class='hamburger-menu  hamburger-menu--close'>Работы</label>
+			<ul class='main-menu'>
+				<li><a class='main-menu__link  main-menu__link--active' href='#'>Главная</a></li>
+				<li><a class='main-menu__link' href='#'>Наши работы</a></li>
+				<li><a class='main-menu__link' href='#'>Записаться</a></li>
+				<li><a class='main-menu__link' href='#'>Контакты</a></li>
+				<li><a class='main-menu__link' href='#'>HTML Academy</a></li>
+				<li><a class='main-menu__link  main-menu--logout' href='#'>Выход</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<section class='works'>
+		<div class='works__bg'></div>
+		<div class='works__wrapper'>
+			<div class='works__tittle'>
+				<h2 class='works__caption'>Наши работы</h2>
+				<button class='works__btn-open  btn'>Кнопка</button>
+			</div>
+
+			<div class='works__inner'>
+
+				<div class='works__hairstyle  works__hairstyle--1'>
+
+					<div class='works__img  works__img--month'>
+						<picture>
+							<source media='(min-width: 977px)' srcset='img/photo-1-desktop.jpg'>
+							<source media='(min-width: 550px' srcset='img/photo-1-tablet.jpg'>
+							<img src='img/photo-1-mobile.jpg' alt='Стильная стрижка работа месяца' />
+						</picture>
+					</div>
+
+					<div class='works__details'>
+						<div class='works__desc'>
+							<p class='works__name'>Лжепётр Мчиславский</p>
+							<p class='works__comment'>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+						</div>
+						<div class='works__services'>
+							<span class='works__tag works__tag--haircut'>Стрижка</span>
+							<span class='works__tag works__tag--shave'>Бритье</span>
+							<span class='works__tag works__tag--moustache'>Усы</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class='works__hairstyle  works__hairstyle--2'>
+					<div class='works__img'>
+						<picture>
+							<source media='(min-width: 977px)' srcset='img/photo-2-desktop.jpg'>
+							<source media='(min-width: 550px' srcset='img/photo-2-tablet.jpg'>
+							<img src='img/photo-2-mobile.jpg' alt='Модная стрижка волос' />
+						</picture>
+					</div>
+					<div class='works__details'>
+						<div class='works__desc'>
+							<p class='works__name'>Саша Мальцев</p>
+							<p class='works__comment'>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+						</div>
+						<div class='works__services'>
+							<span class='works__tag works__tag--haircut'>Стрижка</span>
+						</div>
+					</div>
+				</div>
+
+				<div class='works__hairstyle  works__hairstyle--3'>
+					<div class='works__img'>
+						<picture>
+							<source media='(min-width: 977px)' srcset='img/photo-3-desktop.jpg'>
+							<source media='(min-width: 550px' srcset='img/photo-3-tablet.jpg'>
+							<img src='img/photo-3-mobile.jpg' alt='Стрижка бороды и усов' />
+						</picture>
+					</div>
+					<div class='works__details'>
+						<div class='works__desc'>
+							<p class='works__name'>Владимир Иваныч</p>
+							<p class='works__comment'>К зимнему сезону — готов!</p>
+						</div>
+						<div class='works__services'>
+							<span class='works__tag works__tag--beard'>Борода</span>
+							<span class='works__tag works__tag--moustache'>Усы</span>
+						</div>
+					</div>
+				</div>
+
+				<div class='works__hairstyle  works__hairstyle--4'>
+					<div class='works__img'>
+						<picture>
+							<source media='(min-width: 977px)' srcset='img/photo-4-desktop.jpg'>
+							<source media='(min-width: 550px' srcset='img/photo-4-tablet.jpg'>
+							<img src='img/photo-4-mobile.jpg' alt='Стрижка налысо' />
+						</picture>
+					</div>
+					<div class='works__details'>
+						<div class='works__desc'>
+							<p class='works__name'>Винстон Синий</p>
+							<p class='works__comment'>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+						</div>
+						<div class='works__services'>
+							<span class='works__tag works__tag--haircut'>Стрижка</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class='table'>
+
+	</section>
+
+</body>
+</html>

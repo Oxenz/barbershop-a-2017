@@ -1,0 +1,271 @@
+.works
+	position relative
+	margin-bottom 45px
+
+.works::after
+	content ''
+	position absolute
+	bottom -45px
+	border-width 50vw
+	border-color #353535
+	border-style solid
+	border-top-width 50px
+	border-bottom none
+	border-top-color transparent
+
+.works__wrapper
+	max-width 320px
+	display flex
+	flex-wrap wrap
+	margin 0px auto
+
+	outline 1px dotted violet //del
+	outline-offset -1px
+
+.works__tittle
+	width 100%
+
+.works__caption
+	text-align center
+	text-transform uppercase
+
+.works__btn-open
+	display none
+
+.works__inner
+	background-color #f8f5f2
+	padding-left 20px
+	padding-right 20px
+
+
+// Главный секционный блок
+
+.works__hairstyle
+	display flex
+	flex-wrap wrap
+	margin-bottom 20px
+
+.works__img img
+	vertical-align top
+
+.works__img--month
+	position relative
+
+.works__img--month::before
+	content 'РАБОТА МЕСЯЦА'
+	position absolute
+	width 125px
+	height 37px
+	bottom 30px
+	left -2px
+	background-color #826550
+	font-size 20px
+	line-height 27px
+	color white
+	padding-top 13px
+	padding-left 25px
+
+.works__img--month::after
+	content ''
+	position absolute
+	border-width 25px
+	border-style solid
+	border-color #826550
+	border-left none
+	border-right-color transparent
+	bottom 30px
+	left 147px
+
+.works__details
+	width 100%
+	padding 0px 20px 15px
+	border-width 1px
+	border-color #e5ddd5
+	border-style solid
+	border-top none
+
+
+.works__desc
+	outline 0px solid PLACEHOLDER DELETE
+
+.works__name
+	font-size 24px
+	line-height 27px
+	font-weight 700
+	margin 20px 0px
+
+.works__comment
+	font-size 18px
+	line-height 27px
+	font-weight 300
+	margin-bottom 10px
+
+
+.works__services
+	outline 0px solid PLACEHOLDER DELETE
+
+.works__tag
+	position relative
+	padding-right 30px
+	line-height 45px
+
+.works__tag--haircut
+	padding-left 35px
+
+.works__tag--shave
+	padding-left 45px
+
+.works__tag--moustache
+	padding-left 55px
+
+.works__tag--beard
+	padding-left 45px
+
+.works__tag--haircut::before
+.works__tag--shave::before
+.works__tag--moustache::before
+.works__tag--beard::before
+	content ''
+	position absolute
+	background url('../img/icons/sprite-services.png') no-repeat
+	left 0px
+	top 0px
+
+.works__tag--haircut::before
+	background-position -53px -10px
+	width 20px
+	height 20px
+
+.works__tag--beard::before
+	background-position -10px -10px
+	width 24px
+	height 21px
+
+.works__tag--shave::before
+	background-position -10px -10px
+	width 24px
+	height 21px
+
+.works__tag--moustache::before
+	background-position -94px -10px
+	width 45px
+	height 12px
+	top 4px
+
+
+
+
+
+
+// to move new bem block
+.table
+	width 100%
+	height 700px
+	background-color #353535 //lightpink
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width 550px)
+	.works
+		// background-color lightblue
+		outline-offset -1px
+
+	.works__wrapper
+		max-width 640px
+		margin 0px auto
+
+	.works__inner
+		padding-left 0px
+		padding-right 0px
+
+	.works__btn-open
+		display block
+
+	.works__hairstyle
+		box-shadow none
+
+	.works__details
+		display flex
+		flex-direction column
+		justify-content space-between
+		flex-basis 260px
+		flex-grow 1
+		border-top 1px solid #e5ddd5
+		border-left none
+		padding 25px 50px 40px
+
+	.works__bg
+		background orange url('../img/back-desktop.jpg') no-repeat
+		background-size cover
+		width 100%
+		height 300px
+		position relative
+
+	.works__bg::after
+		content ''
+		position absolute
+		bottom 0px
+		border-width 50vw
+		border-color #f8f5f2
+		border-style solid
+		border-top-width 35px
+		border-bottom none
+		border-top-color transparent
+
+
+	.works__img--month::before
+		top 35px
+		bottom auto
+		left -2px
+
+	.works__img--month::after
+		top 35px
+		bottom auto
+		left 147px
+
+@media only screen and (min-width 977px)
+	.works__wrapper
+		max-width 960px
+
+	.works__inner
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+
+	.works__hairstyle--2
+	.works__hairstyle--3
+	.works__hairstyle--4
+		flex-basis 294px  // max-size img w294px
+		align-content flex-start
+
+	.works__details
+		border-left 1px solid #e5ddd5
+		border-top none
+		padding-left 35px
+		padding-right 35px
+
+	.works__img--month::before
+		top 35px
+		bottom auto
+		left auto
+		right -482px
+
+	.works__img--month::after
+		top 35px
+		bottom auto
+		left auto
+		right -333px
+		transform rotate(180deg)
