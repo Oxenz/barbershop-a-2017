@@ -1,0 +1,178 @@
+.prices
+	background-color #353535
+	padding-bottom 200px
+
+.prices__wrapper
+	max-width 320px
+	box-sizing border-box
+	margin 0px auto
+	display flex
+	flex-direction column
+	padding-left 20px
+	padding-right 20px
+
+.prices__caption
+	color white
+
+.prices__caption--big
+	font-size 30px
+	line-height 30px
+	font-weight 700
+	text-align center
+
+.prices__table
+	display table
+
+.prices__table-row
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	margin 15px 0px
+
+.prices__table-cell
+	display block
+	padding 5px
+	color white
+
+.prices__table-cell--first
+	display none
+
+.prices__table-cell--second
+	padding-left 0px
+	padding-bottom 0px
+	font-weight 700
+
+.prices__table-cell--third
+	width 100%
+	order 4
+	padding-left 0px
+	padding-top 0px
+
+.prices__table-cell--fourth
+	padding-right 0px
+
+.prices__clock
+	min-height 90px
+	display flex
+	justify-content space-around
+	align-items center
+	outline 1px solid #4a4a4a
+
+	img
+		width 60px
+		height 60px
+		margin-left 20px
+
+.prices__caption--small
+	font-size 20px
+	line-height 27px
+	font-weight 300
+	padding-left 30px
+	padding-right 20px
+
+
+
+
+@media only screen and (min-width 550px)
+	.prices__wrapper
+		max-width 640px
+		margin 0px auto
+		padding-left 0px
+		padding-right 0px
+
+	.prices__table
+		width 100%
+		margin-bottom 20px
+		border-collapse collapse
+
+	.prices__table-row
+		display table-row
+
+	.prices__table-cell
+		display table-cell
+		border 1px solid #4a4a4a
+
+	.prices__table-cell--first
+		text-align center
+		width 11%
+
+	.prices__table-cell--second
+		width 40%
+		padding-left 20px
+		font-weight 300
+
+	.prices__table-cell--third
+		width 26%
+		padding-left 20px
+
+	.prices__table-cell--fourth
+		padding-left 20px
+
+	.brackets
+		display none
+
+	.prices__clock
+		min-height 110px
+
+		img
+			width 70px
+			height 70px
+			margin-left 0px
+
+	.prices__caption--small
+		font-size 30px
+		line-height 27px
+		font-weight 700
+		text-transform uppercase
+
+
+
+
+@media only screen and (min-width 977px)
+	.prices__wrapper
+		max-width 960px
+
+	.prices__caption--big
+		margin-top 75px
+		font-size 40px
+		line-height 30px
+		text-transform uppercase
+		text-align left
+
+	.prices__inner
+		display flex
+		justify-content space-between
+
+	.prices__table
+		width 639px
+		margin-bottom 0px
+
+	.prices__table-cell
+		padding 18px
+
+	.prices__table-cell--first
+		width 7%
+
+	.prices__table-cell--second
+		width 26%
+		font-weight 700
+
+	.prices__table-cell--third
+		width 16%
+
+	.prices__table-cell--fourth
+		width 9%
+
+	.prices__clock
+		flex-direction column
+
+		img
+			width 145px
+			height 145px
+			margin-top 15px
+
+	.prices__caption--small
+		font-size 20px
+		line-height 27px
+		font-weight 300
+		text-transform none

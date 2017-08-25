@@ -1,11 +1,12 @@
 .works
 	position relative
-	margin-bottom 45px
+	padding-bottom 50px
+	overflow hidden //fix horizontal scroll
 
 .works::after
 	content ''
 	position absolute
-	bottom -45px
+	bottom 0px
 	border-width 50vw
 	border-color #353535
 	border-style solid
@@ -18,9 +19,6 @@
 	display flex
 	flex-wrap wrap
 	margin 0px auto
-
-	outline 1px dotted violet //del
-	outline-offset -1px
 
 .works__tittle
 	width 100%
@@ -79,14 +77,8 @@
 .works__details
 	width 100%
 	padding 0px 20px 15px
-	border-width 1px
-	border-color #e5ddd5
-	border-style solid
+	border 1px solid #e5ddd5 // e5ddd5
 	border-top none
-
-
-.works__desc
-	outline 0px solid PLACEHOLDER DELETE
 
 .works__name
 	font-size 24px
@@ -157,32 +149,9 @@
 
 
 
-// to move new bem block
-.table
-	width 100%
-	height 700px
-	background-color #353535 //lightpink
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (min-width 550px)
-	.works
-		// background-color lightblue
-		outline-offset -1px
-
 	.works__wrapper
 		max-width 640px
 		margin 0px auto
@@ -191,11 +160,30 @@
 		padding-left 0px
 		padding-right 0px
 
+	.works__tittle
+		display flex
+		align-items center
+		justify-content space-between
+
+	.works__caption
+		font-size 40px
+		line-height 30px
+
 	.works__btn-open
 		display block
+		padding 12px 20px
+		box-sizing border-box
+		font-size 18px
+		line-height 24px
+		font-family 'PT Sans Narrow'
+		font-weight 700
+		text-transform uppercase
+		border 1px solid #e5ddd5
+		background-color transparent
 
 	.works__hairstyle
 		box-shadow none
+		margin-bottom 40px
 
 	.works__details
 		display flex
@@ -203,16 +191,19 @@
 		justify-content space-between
 		flex-basis 260px
 		flex-grow 1
-		border-top 1px solid #e5ddd5
-		border-left none
 		padding 25px 50px 40px
 
+		border 1px solid #e5ddd5 // #e5ddd5
+		border-left none
+
 	.works__bg
-		background orange url('../img/back-desktop.jpg') no-repeat
-		background-size cover
 		width 100%
 		height 300px
+		margin-bottom 30px
 		position relative
+		background #060606 url('../img/back-desktop.jpg') no-repeat
+		background-size cover
+
 
 	.works__bg::after
 		content ''
@@ -236,9 +227,15 @@
 		bottom auto
 		left 147px
 
+
+
+
 @media only screen and (min-width 977px)
 	.works__wrapper
 		max-width 960px
+
+	.works::after
+		display none
 
 	.works__inner
 		display flex
@@ -251,11 +248,21 @@
 		flex-basis 294px  // max-size img w294px
 		align-content flex-start
 
+
+	.works__hairstyle--1 .works__details
+		border 1px solid #e5ddd5
+		border-left none
+		padding-left 40px
+		padding-right 40px
+
 	.works__details
-		border-left 1px solid #e5ddd5
+		border 1px solid #e5ddd5
 		border-top none
 		padding-left 35px
 		padding-right 35px
+
+	.works__desc
+		margin-top 85px
 
 	.works__img--month::before
 		top 35px
@@ -267,5 +274,5 @@
 		top 35px
 		bottom auto
 		left auto
-		right -333px
+		right -332px
 		transform rotate(180deg)
