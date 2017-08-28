@@ -1,6 +1,18 @@
 .prices
+	position relative
 	background-color #353535
-	padding-bottom 200px
+	padding-bottom 65px
+
+	&::after
+		content ''
+		position absolute
+		bottom 0px
+		border-width 50vw
+		border-color #292929
+		border-style solid
+		border-top-width 50px
+		border-bottom none
+		border-top-color transparent
 
 .prices__wrapper
 	max-width 320px
@@ -74,6 +86,10 @@
 
 
 @media only screen and (min-width 550px)
+
+	.prices::after
+		display none
+
 	.prices__wrapper
 		max-width 640px
 		margin 0px auto
@@ -129,6 +145,10 @@
 
 
 @media only screen and (min-width 977px)
+
+	.prices
+		padding-bottom 80px
+
 	.prices__wrapper
 		max-width 960px
 

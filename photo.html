@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
 	<meta name='format-detection' content='telephone=yes'>
 </head>
-<body>
+<body class='photo'>
 
 	<header class='header-top'>
 		<div class='header-top__wrapper'>
@@ -23,11 +23,10 @@
 			<input type='checkbox' id='hamburger' />
 			<label for='hamburger' class='hamburger-menu  hamburger-menu--close'>Работы</label>
 			<ul class='main-menu'>
-				<li><a class='main-menu__link  main-menu__link--active' href='#'>Главная</a></li>
+				<li><a class='main-menu__link  main-menu__link--active' href='/'>Главная</a></li>
 				<li><a class='main-menu__link' href='#'>Наши работы</a></li>
 				<li><a class='main-menu__link' href='#'>Записаться</a></li>
 				<li><a class='main-menu__link' href='#'>Контакты</a></li>
-				<li><a class='main-menu__link' href='#'>HTML Academy</a></li>
 				<li><a class='main-menu__link  main-menu--logout' href='#'>Выход</a></li>
 			</ul>
 		</div>
@@ -40,11 +39,8 @@
 				<h2 class='works__caption'>Наши работы</h2>
 				<button class='works__btn-open  btn'>На главную</button>
 			</div>
-
 			<div class='works__inner'>
-
 				<div class='works__hairstyle  works__hairstyle--1'>
-
 					<div class='works__img  works__img--month'>
 						<picture>
 							<source media='(min-width: 977px)' srcset='img/retina/desktop/photo-1-desktop.jpg 1x, img/retina/desktop/photo-1-desktop@2x.jpg 2x, img/retina/desktop/photo-1-desktop@3x.jpg 3x'>
@@ -52,7 +48,6 @@
 							<img src='img/retina/mobile/photo-1-mobile.jpg' srcset='img/retina/mobile/photo-1-mobile.jpg 1x, img/retina/mobile/photo-1-mobile@2x.jpg 2x, img/retina/mobile/photo-1-mobile@3x.jpg 3x' alt='Стильная стрижка работа месяца' />
 						</picture>
 					</div>
-
 					<div class='works__details'>
 						<div class='works__desc'>
 							<p class='works__name'>Лжепётр Мчиславский</p>
@@ -64,7 +59,6 @@
 							<span class='works__tag works__tag--moustache'>Усы</span>
 						</div>
 					</div>
-
 				</div>
 
 				<div class='works__hairstyle  works__hairstyle--2'>
@@ -125,9 +119,9 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</section>
+
 	<section class='prices'>
 		<div class='prices__wrapper'>
 			<h2 class='prices__caption  prices__caption--big'>Прейскурант</h2>
@@ -175,6 +169,33 @@
 			</div>
 		</div>
 	</section>
+
+	<footer class='footer'>
+		<div class='footer__wrapper'>
+			<div class='footer__inner  footer__inner--top  mobile-center'>
+				<div class='footer__top'>
+					<h3 class='footer__caption'>Барбершоп Бородинский</h3>
+					<p>г. Санкт-Петербург ул. Большая Конюшенная 19/8</p>
+					<a class='footer__phone-a' href='tel:78125556666'>+7 (812) 555-66-66</a>
+					<span class='footer__phone-span'>Тел. +7 (812) 555-66-66</span>
+				</div>
+			</div>
+			<div class='footer__inner  footer__inner--middle'>
+				<div class='footer__middle'>
+					<p class='footer__social-text'>Давайте дружить!</p>
+					<a class='footer__vkontakte  footer__social-icon' href='#'>vk</a>
+					<a class='footer__facebook  footer__social-icon' href='#'>fb</a>
+					<a class='footer__instagram  footer__social-icon' href='#'>inst</a>
+				</div>
+			</div>
+			<div class='footer__inner  footer__inner--bottom  mobile-center'>
+				<div class='footer__bottom'>
+					<p class='footer__developer'>Разработано:</p>
+					<a class='footer__dev-link' href='#'>Pure@Home</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>

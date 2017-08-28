@@ -1,8 +1,13 @@
 .footer
-	width 320px
+	width 100%
+
+.photo .footer
+	background-color #292929
+
+.footer__wrapper
+	max-width 320px
 	margin 0px auto
 	background-color #292929
-	color white
 
 .footer__caption
 	margin-bottom 10px
@@ -10,6 +15,7 @@
 	line-height 27px
 	font-weight 700
 	text-align center
+	color white
 
 .footer__phone-a
 	display block
@@ -22,6 +28,13 @@
 	outline-offset -1px
 	text-align center
 	text-decoration none
+
+	&:hover
+		outline 1px solid #515151
+
+	&:active
+		outline none
+		opacity .5
 
 .footer__phone-span
 	display none
@@ -46,6 +59,13 @@
 	text-align center
 	color white
 
+.footer__social-icon:hover
+	border-color #545454
+
+.footer__social-icon:active
+	background-color #252525
+	opacity .5
+
 .footer__vkontakte
 	display block
 	width 106px
@@ -55,6 +75,9 @@
 	overflow hidden
 	border 1px solid #3e3e3e
 	border-right none
+
+	&:hover + .footer__facebook
+		border-left-color #545454
 
 .footer__facebook
 	display block
@@ -83,6 +106,7 @@
 	line-height 27px
 	margin-top 35px
 	margin-bottom 15px
+	color white
 
 .footer__dev-link
 	display block
@@ -97,6 +121,12 @@
 	outline 1px solid #3e3e3e
 	outline-offset -1px
 
+	&:hover
+		outline 1px solid #515151
+
+	&:active
+		outline none
+		opacity .5
 
 
 
@@ -107,6 +137,7 @@
 		width 100%
 		display flex
 		flex-flow row wrap
+		background-color #292929
 
 	.footer__wrapper
 		width 85%
@@ -117,6 +148,7 @@
 		margin 0px auto
 		margin-bottom 60px
 		box-sizing border-box
+		background-color none
 
 	.footer__inner--top
 		width auto
@@ -149,6 +181,7 @@
 
 	.footer__phone-span
 		display block
+		color white
 
 	.footer__dev-link
 		width auto
@@ -204,3 +237,4 @@
 		line-height 27px
 		text-align center
 		margin-top 0px
+		color white
