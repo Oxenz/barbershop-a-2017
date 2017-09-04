@@ -3,8 +3,7 @@
 <head>
 	<meta charset='UTF-8' />
 	<title>Document</title>
-	<!-- <link rel='stylesheet' href='css/style.min.css' /> -->
-	<link rel='stylesheet' href='css/style.css' />
+	<link rel='stylesheet' href='css/style.min.css' />
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
 	<meta name='format-detection' content='telephone=yes'>
@@ -28,7 +27,7 @@
 				<li><a class='main-menu__link' href='/photo.html'>Наши работы</a></li>
 				<li><a class='main-menu__link' href='#'>Записаться</a></li>
 				<li><a class='main-menu__link' href='#'>Контакты</a></li>
-				<li><a class='main-menu__link  main-menu--logout' href='#'>Выход</a></li>
+				<li><a class='main-menu__link  main-menu__link--logout' href='#'>Выход</a></li>
 			</ul>
 		</div>
 	</header>
@@ -40,34 +39,34 @@
 					<h2 class='statistics__caption'>Стрижка у нас это выгодно!</h2>
 					<p class='statistics__description'>Мужская стрижка требует точного
 						подхода. Обратимся к статистике:</p>
-						<div class='statistics__footnote  statistics__footnote--desktop'>* — приведённые данные ложь</div>
-					</div>
-				</div>
-				<div class='statistics__inner  statistics__inner--color'>
-					<div class='statistics__section2'>
-						<ul class='statistics__lists'>
-							<li class='statistics__list  statistics__list--money  mobile-center'>
-								<div class='statistics__sum'>1 500</div>
-								<div class='statistics__title'>Рублей вложений</div>
-							</li>
-							<li class='statistics__list  statistics__list--time  mobile-center'>
-								<div class='statistics__sum'>7 200</div>
-								<div class='statistics__title'>Секунда времени мастера</div>
-							</li>
-							<li class='statistics__list  statistics__list--count mobile-center'>
-								<div class='statistics__sum'>90 000</div>
-								<div class='statistics__title'>Постриженных волос</div>
-							</li>
-							<li class='statistics__list  statistics__list--likes  mobile-center'>
-								<div class='statistics__sum'>500 000</div>
-								<div class='statistics__title'>Лайков и комплиментов</div>
-							</li>
-						</ul>
-						<div class='statistics__footnote  statistics__footnote--mobile'>* — приведённые данные ложь</div>
-					</div>
+					<div class='statistics__footnote  statistics__footnote--desktop'>* — приведённые данные ложь</div>
 				</div>
 			</div>
-		</section>
+			<div class='statistics__inner  statistics__inner--color'>
+				<div class='statistics__section2'>
+					<ul class='statistics__lists'>
+						<li class='statistics__list  statistics__list--money  mobile-center'>
+							<div class='statistics__sum'>1 500</div>
+							<div class='statistics__title'>Рублей вложений</div>
+						</li>
+						<li class='statistics__list  statistics__list--time  mobile-center'>
+							<div class='statistics__sum'>7 200</div>
+							<div class='statistics__title'>Секунда времени мастера</div>
+						</li>
+						<li class='statistics__list  statistics__list--count mobile-center'>
+							<div class='statistics__sum'>90 000</div>
+							<div class='statistics__title'>Постриженных волос</div>
+						</li>
+						<li class='statistics__list  statistics__list--likes  mobile-center'>
+							<div class='statistics__sum'>500 000</div>
+							<div class='statistics__title'>Лайков и комплиментов</div>
+						</li>
+					</ul>
+					<div class='statistics__footnote  statistics__footnote--mobile'>* — приведённые данные ложь</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class='advantages'>
 		<div class='advantages__wrapper'>
@@ -126,7 +125,7 @@
 				</div>
 				<p class='news__tittle'>Стиль, красота, вот ляпота! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
 			</div>
-			<button class='news__btn-open  btn'>Показать всё</button>
+			<button class='btn  news__btn-open'>Показать всё</button>
 		</div>
 	</section>
 
@@ -139,11 +138,11 @@
 
 			<div class='reviews__box  reviews__box--first'>
 				<div class='reviews__portrait'>
-				<picture>
-					<source media='(min-width: 977px)' srcset='img/travis-desk.jpg'>
-					<source media='(min-width: 550px)' srcset='img/travis-tab.jpg'>
-					<img src='img/travis-mob.jpg' alt='mobilka'>
-				</picture>
+					<picture>
+						<source media='(min-width: 977px)' srcset='img/travis-desk.jpg'>
+						<source media='(min-width: 550px)' srcset='img/travis-tab.jpg'>
+						<img src='img/travis-mob.jpg' alt='mobilka'>
+					</picture>
 				</div>
 				<div class='reviews__description'>
 					<h3 class='reviews__name'>Трэвис Баркер</h3>
@@ -152,11 +151,11 @@
 			</div>
 			<div class='reviews__box  reviews__box--second'>
 				<div class='reviews__portrait'>
-				<picture>
-					<source media='(min-width: 977px)' srcset='img/fred-desk.jpg'>
-					<source media='(min-width: 550px)' srcset='img/fred-tab.jpg'>
-					<img src='img/fred-mob.jpg' alt='mobilka'>
-				</picture>
+					<picture>
+						<source media='(min-width: 977px)' srcset='img/fred-desk.jpg'>
+						<source media='(min-width: 550px)' srcset='img/fred-tab.jpg'>
+						<img src='img/fred-mob.jpg' alt='mobilka'>
+					</picture>
 				</div>
 				<div class='reviews__description'>
 					<h3 class='reviews__name'>Fred Durst</h3>
@@ -176,13 +175,13 @@
 					<p class='reviews__tittle'>Yeah, we are almost done with this tour. We only have a few shows left and then we’re off to the festivals. Festival season has already started.</p>
 				</div>
 			</div>
-			<button class='reviews__btn-write  btn'>Оставить свой</button>
-			<div class='slider-arrow slider-arrow--reviews'>
+			<button class='btn  reviews__btn-write'>Оставить свой</button>
+			<div class='slider-arrow  slider-arrow--reviews'>
 				<label for='reviews__person1'></label>
 				<label for='reviews__person2'></label>
 				<label for='reviews__person3'></label>
 			</div>
-			<div class='toogle toogle--reviews'>
+			<div class='toogle  toogle--reviews'>
 				<label for='reviews__person1'></label>
 				<label for='reviews__person2'></label>
 				<label for='reviews__person3'></label>

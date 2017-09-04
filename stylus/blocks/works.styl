@@ -94,7 +94,7 @@
 
 
 .works__services
-	outline 0px solid PLACEHOLDER DELETE
+	outline 2px dotted red
 
 .works__tag
 	position relative
@@ -119,30 +119,109 @@
 .works__tag--beard::before
 	content ''
 	position absolute
-	background url('../img/icons/sprite-services.png') no-repeat
+	background url('../img/retina/icons/tools@1x.png') no-repeat
 	left 0px
 	top 0px
+	background-size 50px
 
 .works__tag--haircut::before
-	background-position -53px -10px
-	width 20px
-	height 20px
+	background-position -4px -34px
+	width 25px
+	height 25px
 
 .works__tag--beard::before
-	background-position -10px -10px
-	width 24px
-	height 21px
+	background-position -4px -3px
+	width 26px
+	height 26px
 
 .works__tag--shave::before
-	background-position -10px -10px
-	width 24px
-	height 21px
+	background-position -4px -3px
+	width 26px
+	height 26px
 
 .works__tag--moustache::before
-	background-position -94px -10px
-	width 45px
-	height 12px
+	background-position -4px -64px
+	width 47px
+	height 15px
 	top 4px
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5)
+	.works__tag--haircut::before
+	.works__tag--shave::before
+	.works__tag--moustache::before
+	.works__tag--beard::before
+		content ''
+		position absolute
+		background url('../img/retina/icons/tools@2x.png') no-repeat
+		left 0px
+		top 0px
+		outline 1px solid pink
+		background-size 50px
+
+	.works__tag--haircut::before
+		background-position 0px -27px
+		width 25px
+		height 25px
+
+	.works__tag--beard::before
+		background-position -1px 0px
+		width 26px
+		height 26px
+
+	.works__tag--shave::before
+		background-position -1px 0px
+		width 26px
+		height 26px
+
+	.works__tag--moustache::before
+		background-position 0px -53px
+		width 47px
+		height 15px
+		top 4px
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 3)
+	.works__tag--haircut::before
+	.works__tag--shave::before
+	.works__tag--moustache::before
+	.works__tag--beard::before
+		content ''
+		position absolute
+		background url('../img/retina/icons/tools@3x.png') no-repeat
+		left 0px
+		top 0px
+		outline 1px solid blue
+		background-size 50px
+
+	.works__tag--haircut::before
+		background-position 0px -27px
+		width 28px
+		height 25px
+
+	.works__tag--beard::before
+		background-position 0px 0px
+		width 27px
+		height 26px
+
+	.works__tag--shave::before
+		background-position 0px 0px
+		width 27px
+		height 26px
+
+	.works__tag--moustache::before
+		background-position 0px -54px
+		width 50px
+		height 15px
+		top 4px
+
+
+
+
+
+
+
+
+
 
 
 
@@ -217,7 +296,6 @@
 		position relative
 		background #060606 url('../img/back-desktop.jpg') no-repeat
 		background-size cover
-
 
 	.works__bg::after
 		content ''
