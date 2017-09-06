@@ -125,28 +125,32 @@
 	background-size 50px
 
 .works__tag--haircut::before
-	background-position -4px -34px
+	background-position 0px -29px
 	width 25px
 	height 25px
 
 .works__tag--beard::before
-	background-position -4px -3px
+	background-position -2px -3px
 	width 26px
 	height 26px
 
 .works__tag--shave::before
-	background-position -4px -3px
+	background-position -2px -3px
 	width 26px
 	height 26px
 
 .works__tag--moustache::before
-	background-position -4px -64px
+	background-position -3px -58px
 	width 47px
 	height 15px
 	top 4px
 
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5)
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx),
+only screen and (min-resolution: 192dpi)
 	.works__tag--haircut::before
 	.works__tag--shave::before
 	.works__tag--moustache::before
@@ -156,8 +160,10 @@
 		background url('../img/retina/icons/tools@2x.png') no-repeat
 		left 0px
 		top 0px
-		outline 1px solid pink
 		background-size 50px
+
+		outline 1px solid red
+
 
 	.works__tag--haircut::before
 		background-position 0px -27px
@@ -180,7 +186,12 @@
 		height 15px
 		top 4px
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 3)
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (min-resolution: 3dppx),
+only screen and (min-resolution: 288dpi)
 	.works__tag--haircut::before
 	.works__tag--shave::before
 	.works__tag--moustache::before
@@ -190,8 +201,9 @@
 		background url('../img/retina/icons/tools@3x.png') no-repeat
 		left 0px
 		top 0px
-		outline 1px solid blue
 		background-size 50px
+
+		outline 1px solid blue
 
 	.works__tag--haircut::before
 		background-position 0px -27px
@@ -213,15 +225,6 @@
 		width 50px
 		height 15px
 		top 4px
-
-
-
-
-
-
-
-
-
 
 
 

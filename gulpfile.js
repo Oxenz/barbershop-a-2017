@@ -3,7 +3,7 @@ var gulp = require('gulp'),
 		browserSync = require('browser-sync'),
 		del = require('del'),
 		run = require('run-sequence'), // порядок загрузки
-		mincss = require('gulp-csso'), // минификация CSS
+		mincss = require('gulp-csso'), // минификация CSS, но лучше http://refresh-sf.com/
 		rename = require("gulp-rename"), // переименование файлов
 		notify = require('gulp-notify'), // уведомления
 		imagemin = require('gulp-imagemin') // оптимизация img
@@ -40,7 +40,9 @@ gulp.task('stylus', function() {
 			browsers: ['last 2 version'],
 			cascade: false
 		}))
-		.pipe(mincss())
+		.pipe(mincss({
+			restructure: false,
+		}))
 		.pipe(rename('style.min.css'))
 		.pipe(gulp.dest('build/css'))
 		.pipe(browserSync.reload({stream: true}))
@@ -101,7 +103,9 @@ gulp.task('dev-stylus', function() {
 			browsers: ['last 2 version'],
 			cascade: false
 		}))
-		.pipe(mincss())
+		.pipe(mincss({
+			restructure: false,
+		}))
 		.pipe(rename('style.min.css'))
 		.pipe(gulp.dest('css'))
 		.pipe(browserSync.reload({stream: true}))
@@ -126,3 +130,7 @@ gulp.task('dev', ['dev-bs', 'dev-stylus'],  function() {
 	gulp.watch('*.html', browserSync.reload);
 	gulp.watch('js/**/*.js', browserSync.reload);
 });
+
+
+
+
