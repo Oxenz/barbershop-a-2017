@@ -2,15 +2,16 @@ var gulp = require('gulp'),
 		stylus = require('gulp-stylus'),
 		browserSync = require('browser-sync'),
 		del = require('del'),
-		run = require('run-sequence'), // порядок загрузки
-		mincss = require('gulp-csso'), // минификация CSS, но лучше http://refresh-sf.com/
-		rename = require("gulp-rename"), // переименование файлов
-		notify = require('gulp-notify'), // уведомления
-		imagemin = require('gulp-imagemin') // оптимизация img
+		run = require('run-sequence'),
+		mincss = require('gulp-csso'),
+		rename = require("gulp-rename")
+		notify = require('gulp-notify'),
+		imagemin = require('gulp-imagemin')
 		prefixer = require('gulp-autoprefixer'),
 		uglify = require('gulp-uglify'),
+		svgSprite = require('gulp-svg-sprite'),
 
-		plumber = require('gulp-plumber'); // линтер ошибок
+		plumber = require('gulp-plumber');
 
 
 
@@ -28,7 +29,7 @@ gulp.task('copy', function() {
 		'js/**',
 		'*.html',
 		], {
-			base: "."  // что бы копировались целыми папками
+			base: "."
 		})
 	.pipe(gulp.dest('build'));
 });
@@ -131,6 +132,47 @@ gulp.task('dev', ['dev-bs', 'dev-stylus'],  function() {
 	gulp.watch('js/**/*.js', browserSync.reload);
 });
 
+gulp.task('spr-svg', function() {
+	return gulp.src('svg-icons/*.svg')
+	.pipe(svgSprite({
 
+		shape: {
+			dimension: {
+				maxWidth: 500,
+				maxHeight: 500
+			},
+			spacing: {
+				padding: 0
+			},
+		},
+		mode: {
+			symbol: {
+				dest: '.',
+				sprite: 'sprite-symbol.svg'
+			}
+		}
+	}))
+	.pipe(gulp.dest('svg-sprites'));
+});
 
-
+// gulp.task('spr-bg', function() {
+// 	return gulp.src('svg-icons/**/*.svg')
+// 		.pipe(svgSprite({
+// 			mode: {
+// 				css: {
+// 					dest: '.',
+// 					bust: false,
+// 					sprite: 'sprite.svg',
+// 					layout: 'vertical',
+// 					prefix: '$-',
+// 					dimenssions: true,
+// 					render: {
+// 						styl: {
+// 							dest: 'spr-bg.styl'
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}))
+// 		.pipe(gulp.dest('svg-sprites-bg'));
+// });

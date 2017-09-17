@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='ru'>
 <head>
 	<meta charset='UTF-8' />
 	<title>Document</title>
 	<link rel='stylesheet' href='css/style.min.css' />
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta name='format-detection' content='telephone=yes'>
-
+	<script src='js/svg4everybody.min.js'></script>
+	<script>svg4everybody();</script>
 </head>
 <body>
-
 	<header class='header-top'>
 		<div class='header-top__wrapper'>
 			<div class='header-top__logo-wrapper'>
 				<picture>
 					<source media='(min-width: 977px)' srcset='img/icons/logotype-desk.png'>
 					<source media='(min-width: 550px)' srcset='img/icons/logotype-tab.png'>
-					<img class='header-top__logo' src='img/icons/logotype-mob.png' alt='logotype borodinskiy' />
+					<img class='header-top__logo' src='img/icons/logotype-desk.png' srcset='img/icons/logotype-mob.png' alt='logotype borodinskiy' />
 				</picture>
 			</div>
+			<h1 class='header-top__caption-availability'>Эталонная сеть барбершопов "Бородинский" — 100 лет истории.</h1>
 			<input type='checkbox' id='hamburger' />
 			<label for='hamburger' class='hamburger-menu  hamburger-menu--close'>Главная</label>
 			<ul class='main-menu'>
@@ -100,28 +101,28 @@
 			<div class='news__post'>
 				<div class='news__date-wrapper'>
 					<div class='news__data'>29</div>
-					<time>сент</time>
+					<time datetime='2017-09-29'>сент</time>
 				</div>
 				<p class='news__tittle'><a href='#1'>Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</a></p>
 			</div>
 			<div class='news__post'>
 				<div class='news__date-wrapper'>
 					<div class='news__data'>19</div>
-					<time>сент</time>
+					<time datetime='2017-09-19'>сент</time>
 				</div>
 				<p class='news__tittle'><a href='#2'>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</a></p>
 			</div>
 			<div class='news__post'>
 				<div class='news__date-wrapper'>
 					<div class='news__data'>9</div>
-					<time>сент</time>
+					<time datetime='2017-09-09'>сент</time>
 				</div>
 				<p class='news__tittle'><a href='#3'>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</a></p>
 			</div>
 			<div class='news__post'>
 				<div class='news__date-wrapper'>
 					<div class='news__data'>7</div>
-					<time>сент</time>
+					<time datetime='2017-09-07'>сент</time>
 				</div>
 				<p class='news__tittle'>Стиль, красота, вот ляпота! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
 			</div>
@@ -141,7 +142,7 @@
 					<picture>
 						<source media='(min-width: 977px)' srcset='img/travis-desk.jpg'>
 						<source media='(min-width: 550px)' srcset='img/travis-tab.jpg'>
-						<img src='img/travis-mob.jpg' alt='mobilka'>
+						<img src='img/travis-desk.jpg' srcset='img/travis-mob.jpg' alt='Трэвис Баркер, музыкант'>
 					</picture>
 				</div>
 				<div class='reviews__description'>
@@ -154,7 +155,7 @@
 					<picture>
 						<source media='(min-width: 977px)' srcset='img/fred-desk.jpg'>
 						<source media='(min-width: 550px)' srcset='img/fred-tab.jpg'>
-						<img src='img/fred-mob.jpg' alt='mobilka'>
+						<img src='img/fred-desk.jpg' srcset='img/fred-mob.jpg' alt='Фрэд Дерст, музыкант'>
 					</picture>
 				</div>
 				<div class='reviews__description'>
@@ -167,7 +168,7 @@
 					<picture>
 						<source media='(min-width: 977px)' srcset='img/sharon-desk.jpg'>
 						<source media='(min-width: 550px)' srcset='img/sharon-tab.jpg'>
-						<img src='img/sharon-mob.jpg' alt='Sharon Den Adel' />
+						<img src='img/sharon-desk.jpg' srcset='img/sharon-mob.jpg' alt='Шарон Ден Адель, музыкант' />
 					</picture>
 				</div>
 				<div class='reviews__description'>
@@ -202,9 +203,9 @@
 			<div class='footer__inner  footer__inner--middle'>
 				<div class='footer__middle'>
 					<p class='footer__social-text'>Давайте дружить!</p>
-					<a class='footer__vkontakte  footer__social-icon' href='#'>vk</a>
-					<a class='footer__facebook  footer__social-icon' href='#'>fb</a>
-					<a class='footer__instagram  footer__social-icon' href='#'>inst</a>
+					<a class='footer__vkontakte  footer__social-icon' href='#'>vk<svg class='footer__svg  footer__svg--vk'><use xlink:href='svg-sprites/sprite-symbol.svg#vkontakte' /></svg></a>
+					<a class='footer__facebook  footer__social-icon' href='#'>fb<svg class='footer__svg footer__svg--fb'><use xlink:href='svg-sprites/sprite-symbol.svg#facebook' /></svg></a>
+					<a class='footer__instagram  footer__social-icon' href='#'>inst<svg class='footer__svg footer__svg--in'><use xlink:href='svg-sprites/sprite-symbol.svg#instagram' /></svg></a>
 				</div>
 			</div>
 			<div class='footer__inner  footer__inner--bottom  mobile-center'>

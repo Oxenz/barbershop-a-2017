@@ -200,11 +200,11 @@
 		flex-direction column
 
 	.statistics__caption
-		width auto
+		width 70%  // fix IE11 bug при сбросе размеров в width: auto, в IE блок расползается на всю свою ширину игнорирую допустимую ширину своего контейнера
 		padding-right 70px
 
 	.statistics__description
-		width auto
+		width 70%  // fix IE11 bug видимо это связано с flexbox или calc() с которого сбрасывается размер способм задания width: auto
 		padding-right 70px
 
 	.statistics__sum

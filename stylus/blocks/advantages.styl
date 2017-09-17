@@ -1,6 +1,7 @@
 .advantages
 	width 320px
 	min-height 350px
+	// height 350px
 	margin 0px auto
 	display flex
 	flex-direction column
@@ -30,6 +31,7 @@
 	color white
 	display none
 	min-height 255px
+
 
 .advantages__fast
 	background #242424 url('../img/icons/advantage-1.png') no-repeat 50% 0%
@@ -175,6 +177,7 @@
 	.advantages__expensive
 		padding 0px
 		text-align center
+		flex-basis 250px  // fix bug IE11 без размеров в осле ф.е. начинают занимать всю ширину родителя и выпадать из контейнера
 
 	.advantages__caption
 		padding-top 190px

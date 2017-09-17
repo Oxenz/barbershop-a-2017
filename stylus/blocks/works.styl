@@ -92,10 +92,6 @@
 	font-weight 300
 	margin-bottom 10px
 
-
-.works__services
-	outline 2px dotted red
-
 .works__tag
 	position relative
 	padding-right 30px
@@ -162,7 +158,6 @@ only screen and (min-resolution: 192dpi)
 		top 0px
 		background-size 50px
 
-		outline 1px solid red
 
 
 	.works__tag--haircut::before
@@ -203,7 +198,6 @@ only screen and (min-resolution: 288dpi)
 		top 0px
 		background-size 50px
 
-		outline 1px solid blue
 
 	.works__tag--haircut::before
 		background-position 0px -27px
@@ -289,7 +283,7 @@ only screen and (min-resolution: 288dpi)
 		flex-grow 1
 		padding 25px 50px 40px
 
-		border 1px solid #e5ddd5 // #e5ddd5
+		border 1px solid #e5ddd5
 		border-left none
 
 	.works__bg
@@ -353,6 +347,7 @@ only screen and (min-resolution: 288dpi)
 	.works__details
 		border 1px solid #e5ddd5
 		border-top none
+		flex-basis 399px  // fix IE11 bug иначе размер блока будет не на всю ширину родителя
 		padding-left 35px
 		padding-right 35px
 
