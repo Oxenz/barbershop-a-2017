@@ -27,5 +27,5 @@
 		* Отдельной строки стоит будущее и настоящее веб графики — SVG, блок социальных сетей в футере построен на symbols-SVG-спрайте который подключается на index.html and photo.html по разному, на главной используется #external с библиотекой svg4everybody(для поддержки IE), а на photo.html взят на вооружение другой способ #fragment identifiers связанный с встраиванием в тело html символьного спрайта с последующим обращением к нему через <use> thx SaraSoueidan :thumbsup:
 	* Normalize.css лучше Reset.css все файлы .css и js правильно минифицированны
 
-![maket-image1](https://github.com/Oxenz/technomart-2017/blob/master/img/pre/page1.jpg "Часть макета главной страницы index.html")
-![maket-image2](https://github.com/Oxenz/technomart-2017/blob/master/img/pre/page2.jpg "Часть макета второстепенной страницы photo.html")
+![maket-image1](https://github.com/Oxenz/barbershop-a-2017/blob/master/img/pre/all-size-index.jpg "Часть макета главной страницы index.html")
+![maket-image2](https://github.com/Oxenz/barbershop-a-2017/blob/master/img/pre/page2.jpg "Часть макета второстепенной страницы photo.html")
