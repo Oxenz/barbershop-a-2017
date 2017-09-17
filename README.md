@@ -28,4 +28,4 @@
 	* Normalize.css лучше Reset.css все файлы .css и js правильно минифицированны
 
 ![maket-image1](https://github.com/Oxenz/barbershop-a-2017/blob/master/img/pre/all-size-index.jpg "Часть макета главной страницы index.html")
-![maket-image2](https://github.com/Oxenz/barbershop-a-2017/blob/master/img/pre/page2.jpg "Часть макета второстепенной страницы photo.html")
+![maket-image2](https://github.com/Oxenz/barbershop-a-2017/blob/master/img/pre/all-size-photo.jpg "Часть макета второстепенной страницы photo.html")
